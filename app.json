@@ -1,0 +1,14 @@
+{
+    "name": "V2ray-server by b4iterdev",
+    "description": "This is a docker repo for running v2ray server on",
+    "logo":"",
+    "keywords": ["xray","v2ray"],
+    "env": {
+        "UUID": {
+            "description": "𝕧2ray UUID",
+            "required": true        
+        }
+    },
+    "repository": "https://github.com/b4iterdev/v2ray-docker-deploy",
+    "stack": "container"
+}
