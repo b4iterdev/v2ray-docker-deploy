@@ -7,6 +7,10 @@
         "UUID": {
             "description": "𝕧2ray UUID",
             "required": true        
+        },
+        "Port": {
+            "description": "Your desired port,it should be 80 or 443",
+            "required": true 
         }
     },
     "repository": "https://github.com/b4iterdev/v2ray-docker-deploy",
