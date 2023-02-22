@@ -6,7 +6,7 @@ rm -rf /etc/xray/config.json
 cat << EOF > /etc/xray/config.json
 {
   "log": {
-        "loglevel": "warning"
+        "loglevel": "debug"
   },
   "inbounds": [
     {
