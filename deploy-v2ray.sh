@@ -5,15 +5,21 @@
 rm -rf /etc/xray/config.json
 cat << EOF > /etc/xray/config.json
 {
+  "log": {
+        "loglevel": "warning"
+  },
   "inbounds": [
     {
-      "port": $PORT,
-      "protocol": "vless",
+      "port": 80,
+      "protocol": "vmess",
       "settings": {
         "decryption": "none",
         "clients": [
           {
-            "id": "$UUID"
+            "id": "$UUID",
+            "alterId": 0,
+            "security": "auto",
+            "level": 0
           }
         ]
       },
